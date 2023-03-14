@@ -7,14 +7,18 @@ loginButton.addEventListener('click', () => {
 
     let inputLoginEmail = document.getElementById('loginEmail').value;
     let inputLoginPassword = document.getElementById("loginPassword").value;
-    let messageErrorElement = document.getElementById('login-error');
-    console.log(inputLoginEmail);
-    console.log(EMAIL);
+    let loginErrorElement = document.getElementById('login-error');
+    let messageErrorElement = document.getElementById('message-error');
 
-    if (inputLoginEmail != EMAIL || inputLoginPassword != PASSWORD) {
-        return messageErrorElement.innerHTML = "Wrong email or password";
+    if (inputLoginEmail === "" || inputLoginPassword === "") {
+        return messageErrorElement.innerHTML = "All fields needs to be filled";
     } else {
         messageErrorElement.innerHTML = "";
+        if (inputLoginEmail != EMAIL || inputLoginPassword != PASSWORD) {
+            return loginErrorElement.innerHTML = "Wrong email or password";
+        } else {
+            loginErrorElement.innerHTML = "";
+        }
     }
 
 })

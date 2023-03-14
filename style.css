@@ -23,7 +23,7 @@ h1 {
     flex-direction: column;
     width: 500px;
     align-items: stretch;
-    margin: 0 20px;
+    margin: 20px 20px;
 }
 
 .loginInput {
@@ -97,6 +97,13 @@ img {
         width: 80%;
     }
 
+    .loginButton {
+        align-self: center;
+    }
+
+    .loginImg {
+        display: none;
+    }
 
     input {
         width: auto;
