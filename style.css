@@ -76,6 +76,12 @@ p {
 
 img {
     width: 90%;
+    margin: auto;
+}
+
+.loginImg {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -90,6 +96,7 @@ img {
     .loginInput {
         width: 80%;
     }
+
 
     input {
         width: auto;
