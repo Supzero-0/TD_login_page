@@ -23,6 +23,7 @@ h1 {
     flex-direction: column;
     width: 500px;
     align-items: stretch;
+    margin: 0 20px;
 }
 
 .loginInput {
@@ -63,4 +64,22 @@ input {
 
 p {
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .loginForm {
+        align-items: center;
+    }
+
+    .loginInput {
+        width: 80%;
+    }
+
+    input {
+        width: auto;
+    }
 }
