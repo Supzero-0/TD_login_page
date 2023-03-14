@@ -1,7 +1,7 @@
-let loginButton = document.getElementById("loginButton");
+let messageButton = document.getElementById("loginButton");
 let formArea = document.getElementById("container");
 
-loginButton.addEventListener('click', () => {
+messageButton.addEventListener('click', () => {
     // 1 get the values
     let inputLoginEmail = document.getElementById('loginEmail').value;
     let inputLoginPassword = document.getElementById("loginPassword").value;
